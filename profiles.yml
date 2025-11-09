@@ -1,0 +1,18 @@
+sample_cust:
+  target: sandbox
+  outputs:
+    sandbox:
+      type: snowflake
+      account: AMMGPUD-MJB30517
+      user: developer
+      password: TemporaryAccess@12345
+      role: AccountAdmin
+      database: sample_dbt
+      warehouse: compute_wh
+      schema: staging
+      threads: 4
+      client_session_keep_alive: false
+      query_tag: dbt_sample_dbt_sandbox
+
+      
+    
