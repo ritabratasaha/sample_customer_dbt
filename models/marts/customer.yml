@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: customer
+    description: ""
+    columns:
+      - name: c_custkey
+        description: ""
+      - name: c_name
+        description: ""
+      - name: c_address
+        description: ""
+      - name: c_accbal
+        description: ""
+      - name: c_mktsegment
+        description: ""
