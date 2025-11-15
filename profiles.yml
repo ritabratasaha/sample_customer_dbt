@@ -7,7 +7,7 @@ sample_cust:
       user: developer
       password: TemporaryAccess@12345
       role: AccountAdmin
-      database: sample_dbt
+      database: "{{ var('my_database') }}" 
       warehouse: compute_wh
       schema: staging
       threads: 4

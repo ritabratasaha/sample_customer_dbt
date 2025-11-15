@@ -30,7 +30,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 # files using the `{{ config(...) }}` macro.
 models:
   sample_cust:
-    +database: sample_cust
+    +database: "{{ var('my_database') }}" 
     marts:
       +schema: marts
       +materialized: table
