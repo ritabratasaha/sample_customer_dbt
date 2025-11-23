@@ -1,13 +1,13 @@
 sample_cust:
   target: sandbox
   outputs:
-    sandbox:
+    prod:
       type: snowflake
       account: AMMGPUD-MJB30517
       user: developer
       password: TemporaryAccess@12345
       role: AccountAdmin
-      database: "{{ env_var('my_database') }}" 
+      database: sample_cust
       warehouse: compute_wh
       schema: staging
       threads: 4
