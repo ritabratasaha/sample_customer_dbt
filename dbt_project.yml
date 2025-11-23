@@ -33,7 +33,7 @@ vars:
 # files using the `{{ config(...) }}` macro.
 models:
   sample_cust:
-    +database: '{{ var("sample_customer_database") }}'
+    +database: "{{ env_var('sample_cust_database') }}" 
     marts:
       +schema: marts
       +materialized: table
@@ -42,3 +42,5 @@ models:
       +materialized: table
 
 ## Command : dbt run --vars '{sample_customer_database: "sample_cust"}' --target prod
+## Command : export sample_cust_database="sample_cust"
+## Command : dbt run  --target prod 
