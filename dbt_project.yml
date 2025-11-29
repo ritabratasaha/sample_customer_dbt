@@ -21,8 +21,8 @@ clean-targets:         # directories to be removed by `dbt clean`
   - "target"
   - "dbt_packages"
 
-vars:
-  sample_customer_database: 'sample_cust'
+# vars:
+#   sample_customer_database: 'sample_cust'
 
 
 # Configuring models
@@ -33,7 +33,7 @@ vars:
 # files using the `{{ config(...) }}` macro.
 models:
   sample_cust:
-    +database: "{{ env_var('sample_cust_database') }}" 
+    +database: sample_cust
     marts:
       +schema: marts
       +materialized: table

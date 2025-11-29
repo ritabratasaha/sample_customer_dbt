@@ -1,12 +1,12 @@
 with cust as (
-    Select 
+    select 
         c_custkey,
         c_name,
         c_address,
         c_acctbal,
         c_mktsegment
     from 
-    {{ ref('customer_base')}}
+    {{ ref('customer_base') }}
 )
-Select * from cust
+select * from cust
 

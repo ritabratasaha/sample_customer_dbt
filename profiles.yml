@@ -13,6 +13,17 @@ sample_cust:
       threads: 4
       client_session_keep_alive: false
       query_tag: dbt_sample_dbt_sandbox
-
+    sandbox:
+      type: snowflake
+      account: CBDIHVX-IUB70930
+      user: developer
+      password: TemporaryAccess@12345
+      role: AccountAdmin
+      database: sample_cust
+      warehouse: compute_wh
+      schema: staging
+      threads: 4
+      client_session_keep_alive: false
+      query_tag: dbt_sample_dbt_sandbox
       
     
